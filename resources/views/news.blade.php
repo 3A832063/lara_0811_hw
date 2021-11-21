@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>最新消息</title>
-    <button onclick="location.href='{{route('home.index')}}'">首頁</button>
-    <button onclick="location.href='{{route('about.index')}}'">關於本站</button>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -23,6 +21,8 @@
     </style>
 </head>
 <body class="antialiased">
+<button onclick="location.href='{{route('home.index')}}'">首頁</button>
+<button onclick="location.href='{{route('about.index')}}'">關於本站</button>
 <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
     @if (Route::has('login'))
         <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
